@@ -1,0 +1,12 @@
+/*estilo.css*/
+
+p * {color:blue;
+    font-size: 16pt;}
+
+b * {color:red;
+     font-family: verdana;}
+
+i * {color:red;
+    font-family: sans-serif;}
+
+
