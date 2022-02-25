@@ -1,32 +1,42 @@
 div {
-    border:15 solid gray;
-    margin: 0.5%;
-    padding: 0.5%;
+    border:1px solid gray;
+    margin: 5px;
+    padding: 5px;
 }
 
-#a {background-color: aquamarine;}
+#a {
+    background-color: aquamarine;
+    text-align: center;
+}
 
 #b {
     background-color: coral;
     float: left;
-    width: 25%;
+    width: 230px;
+    margin-top: 0;
+
+/* Float Livre --> */
 }
 #c {
-    background-color: darkblue;
-    float: left;
+    background-color: darkcyan;
     font-family: 'Franklin Gothic Medium';
     color: white;
-    width: 44%;
+    margin-left: 252px;
+    margin-right: 252px;
 }
+
+/* Float fixo --> */
 
 #d {background-color: darksalmon;
-    float: left;
-    width: 25%;
+    float: right;
+    width: 230px;
+    margin-top: 0;
 }
 
+/* Float fixo abaixo de todos os elementos -->  */
 #e {
     background-color: darkgreen;
     text-align: center;
-    clear: left;
     color:white;
+    clear: both;
 }
