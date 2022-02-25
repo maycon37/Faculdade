@@ -1,0 +1,32 @@
+div {
+    border:15 solid gray;
+    margin: 0.5%;
+    padding: 0.5%;
+}
+
+#a {background-color: aquamarine;}
+
+#b {
+    background-color: coral;
+    float: left;
+    width: 25%;
+}
+#c {
+    background-color: darkblue;
+    float: left;
+    font-family: 'Franklin Gothic Medium';
+    color: white;
+    width: 44%;
+}
+
+#d {background-color: darksalmon;
+    float: left;
+    width: 25%;
+}
+
+#e {
+    background-color: darkgreen;
+    text-align: center;
+    clear: left;
+    color:white;
+}
