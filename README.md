@@ -4,4 +4,6 @@ Projeto de Faculdade
 
 Materias em desenvolvimento.
 
-PC Linux - teste de GIT / VSCODE
+PC Linux - Teste de GIT , Github , VSCODE
+
+    - Curso Livre - Full Stack JavaScript
