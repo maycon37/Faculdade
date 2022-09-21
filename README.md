@@ -1,10 +1,13 @@
 # Faculdade
 
-Projeto de Faculdade 
+Projetos de Faculdade e Cursos 
 
-Materias em desenvolvimento.
+Materias em desenvolvimento:
 
-PC Linux - Teste de GIT , Github , VSCODE
+OS Linux Ubunto
+GIT e Github
+VsCode ->( Front-End ) 
+Eclipse -> JAVA
 
     - Curso Livre - Full Stack JavaScript
     - Curso HIRING CODERS 
