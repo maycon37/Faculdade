@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ex7AprovacaoDeAluno {
+public class Ex07AprovacaoDeAluno {
 	public static void main(String[] args) {
 
 		Boolean variavelVerdadeiro = true;

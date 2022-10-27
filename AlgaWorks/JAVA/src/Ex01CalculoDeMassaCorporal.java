@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ex1CalculoDeMassaCorporal {
+public class Ex01CalculoDeMassaCorporal {
 	
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in); // Calculadora de IMC = Peso ÷ (Altura × Altura)

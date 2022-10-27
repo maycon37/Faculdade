@@ -1,5 +1,5 @@
 
-public class Ex6TipoLogico {
+public class Ex06TipoLogico {
 	public static void main(String[] args) {
 
 		Boolean variavelVerdadeiro = true;

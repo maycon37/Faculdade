@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ex5TipoTexto {
+public class Ex05TipoTexto {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		

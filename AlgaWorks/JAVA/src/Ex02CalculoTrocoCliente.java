@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ex2CalculoTrocoCliente {
+public class Ex02CalculoTrocoCliente {
 	// Calculadora de troco
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in); // Inicio do programa

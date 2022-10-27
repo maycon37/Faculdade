@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ex3CalculadoraAoQuadrado {
+public class Ex03CalculadoraAoQuadrado {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);

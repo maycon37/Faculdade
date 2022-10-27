@@ -1,5 +1,5 @@
 
-public class Ex4TiposNumericos {
+public class Ex04TiposNumericos {
 
 	public static void main(String[] args) {
 		Byte numeroByte = 127;

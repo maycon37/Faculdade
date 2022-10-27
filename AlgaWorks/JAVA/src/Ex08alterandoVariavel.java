@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ex8alterandoVariavel {
+public class Ex08alterandoVariavel {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		
