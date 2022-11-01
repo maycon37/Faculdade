@@ -1,6 +1,4 @@
-# Faculdade
-
-Projetos de Faculdade e Cursos 
+Projetos de Faculdade e Cursos Livres
 
 Materias em desenvolvimento:
 
