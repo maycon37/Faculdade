@@ -1,0 +1,12 @@
+/* Algoritmo idade_maior
+int Idade
+Início
+ escreva “Digite sua idade”
+ leia Idade
+ se (Idade >= 18)
+ escreva “Maior de idade”
+ senão
+ escreva “Menor de idade”
+ fim_se
+Fim */
+
