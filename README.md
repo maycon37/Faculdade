@@ -9,3 +9,6 @@ Cusos em desenvolvimento:
 
   - Curso Algaworks 
         Lógica de Programação com Java / Fonte-End : HTML5 / CSS3
+
+  - Técnicas de desenvolvimento - Matéria
+  
