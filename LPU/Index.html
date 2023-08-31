@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LPU - V.TAL</title>
+</head>
+
+<body>
+    <h1>LPU V.TAL</h1>
+    <h2>Lista de Preços Unitários</h2>
+
+    <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+
+    <!-- PRODUTOS TELECOM ATUAIS -->
+    <ul class="lista-produtos">
+        <li onclick="mostrarSubprodutos('produto1')">IP Connect</li>
+        <li onclick="mostrarSubprodutos('produto2')">MPLS</li>
+        <li onclick="mostrarSubprodutos('produto3')">Digitronco</li>
+        <li onclick="mostrarSubprodutos('produto4')">P2P Link Dedicado</li>
+    </ul>
+
+    <!-- IP CONNECT-->
+    <div id="produto1-subprodutos" class="subprodutos">
+        <h2>Modalidade de acesso </h2>
+        <ul>
+            <li>
+                Ponto a ponto
+                <ul class="velocidades">
+                 
+                </ul>
+            </li>
+            <li>
+                GPON    
+                <ul class="velocidades">
+                    <li>Velocidade: 150 Mbps</li>
+                    <li>Velocidade: 250 Mbps</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- MPLS -->
+    <div id="produto2-subprodutos" class="subprodutos">
+        <h2>Modalidade de acesso </h2>
+        <ul>
+            <li>
+                Ponto a ponto
+                <ul class="velocidades">
+                    <li>Velocidade: 300 Mbps</li>
+                    <li>Velocidade: 500 Mbps</li>
+                </ul>
+            </li>
+            <li>
+                GPON
+                <ul class="velocidades">
+                    <li>Velocidade: 200 Mbps</li>
+                    <li>Velocidade: 400 Mbps</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- DIGITRONCO -->
+    <div id="produto3-subprodutos" class="subprodutos">
+        <h2>Modalidade de acesso </h2>
+        <ul>
+            <li>
+                Ponto a ponto
+                <ul class="velocidades">
+                    <li>Velocidade: 300 Mbps</li>
+                    <li>Velocidade: 500 Mbps</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- LINK DEDICADO -->
+    <div id="produto4-subprodutos" class="subprodutos">
+        <h2>Modalidade de acesso </h2>
+        <ul>
+            <li>
+                Ponto a ponto
+                <ul class="velocidades">
+                    <li>Velocidade: 300 Mbps</li>
+                    <li>Velocidade: 500 Mbps</li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+    <!-- VELOCIDADES -->
+    <ul class="velocidades">
+        <li>Velocidade: 2 Mbps</li>
+        <li>Velocidade: 4 Mbps</li>
+        <li>Velocidade: 6 Mbps</li>
+        <li>Velocidade: 8 Mbps</li>
+        <li>Velocidade: 10 Mbps</li>
+        <li>Velocidade: 12 Mbps</li>
+        <li>Velocidade: 14 Mbps</li>
+        <li>Velocidade: 16 Mbps</li>
+        <li>Velocidade: 20 Mbps</li>
+        <li>Velocidade: 24 Mbps</li>
+        <li>Velocidade: 30 Mbps</li>
+        <li>Velocidade: 34 Mbps</li>
+        <li>Velocidade: 40 Mbps</li>
+        <li>Velocidade: 45 Mbps</li>
+        <li>Velocidade: 50 Mbps</li>
+        <li>Velocidade: 60 Mbps</li>
+        <li>Velocidade: 70 Mbps</li>
+        <li>Velocidade: 75 Mbps</li>
+        <li>Velocidade: 80 Mbps</li>
+        <li>Velocidade: 90 Mbps</li>
+        <li>Velocidade: 100 Mbps</li>
+        <li>Velocidade: 155 Mbps</li>
+        <li>Velocidade: 200 Mbps</li>
+        <li>Velocidade: 300 Mbps</li>
+        <li>Velocidade: 400 Mbps</li>
+        <li>Velocidade: 500 Mbps</li>
+        <li>Velocidade: 600 Mbps</li>
+        <li>Velocidade: 750 Mbps</li>
+    </ul>
+
+    <!-- SCRIPT DOS SUBPRODUTOS -->
+    <script>
+    function mostrarSubprodutos(produtoId) {
+    var subprodutosDiv = document.getElementById(produtoId + "-subprodutos");
+    var listaProdutos = document.querySelectorAll('.subprodutos');
+
+    for (var i = 0; i < listaProdutos.length; i++) { listaProdutos[i].style.display='none' ; }
+        subprodutosDiv.style.display='block' ; } </script>
+
+        <style>
+
+            .lista-produtos {
+                text-align: center;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .lista-produtos li {
+                font-family: Verdana;
+                font-size: 15px;
+                background-color: grey;
+                cursor: pointer;
+                padding: 5px 15px;
+                border: 3px solid black;
+                margin-bottom: 5px;
+            }
+
+            .subprodutos {
+                display: none;
+                margin-top: 10px;
+            }
+
+            .velocidades {
+                list-style: none;
+                padding-left: 20px;
+                margin-top: 5px;
+            }
+        </style>
+
+
+</body>
+
+</html>

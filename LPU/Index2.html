@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Seleção de Produtos</title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+
+    <h2>Selecione um Produto:</h2>
+    <select id="produtoSelect" onchange="updateSubprodutos()">
+        <option value="IP Connect">IP Connect</option>
+        <option value="MPLS">MPLS</option>
+        <option value="Digitronco">Digitronco</option>
+        <option value="P2P Link Dedicado">P2P Link Dedicado</option>
+    </select>
+
+    <h2>Modalidade de Acesso:</h2>
+    <select id="modalidadeSelect" onchange="updateTiposVelocidade()">
+    </select>
+
+    <h2>Tipo de Velocidade:</h2>
+    <select id="tipoVelocidadeSelect">
+    </select>
+
+    <input type="text" id="ufInput" placeholder="UF">
+    <input type="text" id="municipioInput" placeholder="Município">
+    <button onclick="buscarInformacao()">Buscar</button>
+    <div id="resultado"></div>
+
+    <script>
+        const modalidades = {
+            "IP Connect": ["GPON", "Ponto a ponto"],
+            "MPLS": ["GPON", "Ponto a ponto"],
+            "Digitronco": ["Ponto a ponto"],
+            "P2P Link Dedicado": ["Ponto a ponto"]
+        };
+
+        const tiposVelocidade = {
+            "Digitronco": ["Intraestadual"],
+            "P2P Link Dedicado": ["Intraestadual", "Interestadual"],
+            "IP Connect": ["Simétrico", "Assimétrico"],
+            "MPLS": ["Simétrico", "Assimétrico"]
+        };
+
+        const velocidades = [
+            2, 4, 6, 8, 10, 12, 14, 16, 20, 24, 30, 34,
+            40, 45, 50, 60, 70, 75, 80, 90, 100,
+            155, 200, 300, 400, 500, 600, 750, 1000
+        ];
+
+        const produtoSelect = document.getElementById("produtoSelect");
+        const modalidadeSelect = document.getElementById("modalidadeSelect");
+        const tipoVelocidadeSelect = document.getElementById("tipoVelocidadeSelect");
+
+        function updateSubprodutos() {
+            const produto = produtoSelect.value;
+            const modalidadesProduto = modalidades[produto];
+
+            modalidadeSelect.innerHTML = "";
+            tipoVelocidadeSelect.innerHTML = "";
+
+            for (const modalidade of modalidadesProduto) {
+                const option = document.createElement("option");
+                option.value = modalidade;
+                option.text = modalidade;
+                modalidadeSelect.appendChild(option);
+            }
+
+            updateTiposVelocidade();
+        }
+
+        function updateTiposVelocidade() {
+            const produto = produtoSelect.value;
+            const modalidade = modalidadeSelect.value;
+            const tipos = tiposVelocidade[produto];
+
+            tipoVelocidadeSelect.innerHTML = "";
+
+            for (const tipo of tipos) {
+                const option = document.createElement("option");
+                option.value = tipo;
+                option.text = tipo;
+                tipoVelocidadeSelect.appendChild(option);
+            }
+        }
+
+        updateSubprodutos();
+        
+    function buscarInformacao() {
+        const uf = document.getElementById("ufInput").value;
+        const municipio = document.getElementById("municipioInput").value;
+
+        Papa.parse("LPU/DATA/LPU_PERIMETRO.csv", {
+            download: true,
+            header: true,
+            skipEmptyLines: true,
+            complete: function (results) {
+                const dados = results.data;
+
+                for (const dado of dados) {
+                    if (dado.UF === uf && dado.Municipio === municipio) {
+                        exibirResultado(dado.Informacao);
+                        return;
+                    }
+                }
+
+                exibirResultado("Nenhuma informação encontrada.");
+            }
+        });
+    }
+
+    function exibirResultado(resultado) {
+        const resultadoDiv = document.getElementById("resultado");
+        resultadoDiv.innerHTML = resultado;
+    }
+    </script>
+</body>
+</html>
