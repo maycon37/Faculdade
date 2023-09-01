@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class EX10_Triangulo {
+public class EX10Triangulo {
     public static void main(String[] args) {
         double a,b,c;
     

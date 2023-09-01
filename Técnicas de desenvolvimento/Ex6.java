@@ -3,7 +3,7 @@ import java.util.Scanner;
 /*
  * EX6_Bascara_Diferente
  */
-public class EX6_Bascara_Diferente {
+public class Ex6 {
 
     public static void main(String[] args) {
         float a, b, c,
