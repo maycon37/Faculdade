@@ -1,9 +1,6 @@
-import javax.swing.*;
+import javax.swing.JOptionPane;
 
-/**
- * EX1
- */
-public class EX1 {
+class EX1 {
     public static void main(String args[]) {
         float nota;
         nota=Float.parseFloat(

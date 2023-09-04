@@ -1,7 +1,6 @@
-
 import javax.swing.JOptionPane;
 
-public class EX5_Bascara {
+public class EX5 {
     public static void main(String[] args) {
         double a,b,c,x1,x2;
 

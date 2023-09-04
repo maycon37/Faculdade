@@ -1,4 +1,4 @@
-import javax.swing.*;
+import javax.swing.JOptionPane;
 public class EX2 {
     public static void main(String [] args) {
         int q, n;

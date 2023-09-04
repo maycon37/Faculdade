@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class EX9Velocidade {
+public class EX9 {
     public static void main(String[] args) {
         int velo = 55;
     

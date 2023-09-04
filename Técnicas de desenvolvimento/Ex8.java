@@ -1,16 +1,6 @@
-/* Algoritmo par
-    inteiro num
-    Inicio
-    escreva “Entre com um número inteiro”
-    leia num
-    se (num%2==0)
-    escreva “O número: “ + num + “ é par”
-    fim-se
-fim.
-*/
 import javax.swing.JOptionPane;
 
-public class Ex8  {
+public class Ex8 {
     public static void main(String[] args) {
     
         int num;
