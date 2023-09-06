@@ -1,5 +1,5 @@
 import javax.swing.JOptionPane;
-public class EX2 {
+public class eX2 {
     public static void main(String [] args) {
         int q, n;
         n = Integer.parseInt(JOptionPane.showInputDialog("Entre com o número"));
